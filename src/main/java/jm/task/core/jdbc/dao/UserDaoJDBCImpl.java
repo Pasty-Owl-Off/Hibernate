@@ -74,7 +74,6 @@ public class UserDaoJDBCImpl implements UserDao {
         } catch (SQLException e) {
             System.err.println("Не удалось удалить пользователя");
         }
-
     }
 
     public List<User> getAllUsers() {
