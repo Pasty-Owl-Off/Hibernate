@@ -18,13 +18,12 @@ public class UserDaoJDBCImpl implements UserDao {
     private static final String LAST_NAME = "lastName";
     private static final String AGE = "age";
 
+
     public UserDaoJDBCImpl() {
         String createDatabase = "CREATE DATABASE IF NOT EXISTS " + DB_NAME;
-        String useDB = "USE " + DB_NAME;
         try (Connection connection = Util.getConnection();
              Statement statement = connection.createStatement()) {
             statement.execute(createDatabase);
-            statement.execute(useDB);
         } catch (SQLException e) {
             System.err.println("Не удалось установить состояние базы данных");
         }
