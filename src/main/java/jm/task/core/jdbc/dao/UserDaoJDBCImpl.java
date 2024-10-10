@@ -14,9 +14,9 @@ public class UserDaoJDBCImpl implements UserDao {
     private static final String USERS_TABLE = "UsersTable";
     private static final String DB_NAME = "UsersDB";
     private static final String ID = "id";
-    private static final String NAME = "Name";
-    private static final String LAST_NAME = "LastName";
-    private static final String AGE = "Age";
+    private static final String NAME = "name";
+    private static final String LAST_NAME = "lastName";
+    private static final String AGE = "age";
 
     public UserDaoJDBCImpl() {
         String createDatabase = "CREATE DATABASE IF NOT EXISTS " + DB_NAME;
