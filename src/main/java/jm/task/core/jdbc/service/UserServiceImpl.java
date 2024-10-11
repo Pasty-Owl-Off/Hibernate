@@ -8,7 +8,8 @@ import jm.task.core.jdbc.model.User;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    private UserDao newUser = new UserDaoJDBCImpl();
+//    private UserDao newUser = new UserDaoJDBCImpl();
+    private UserDao newUser = new UserDaoHibernateImpl();
 
     public void createUsersTable() {
         newUser.createUsersTable();
